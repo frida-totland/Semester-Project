@@ -1,36 +1,7 @@
-/* Explore page — alternating image / text rows */
-.explore-row--orange {
+.media-row--orange {
     background-color: #EFAA6E;
 }
 
-.explore-row-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-    width: min(1100px, 100% - 40px);
-    margin: 0 auto;
-    padding: 70px 0;
-}
-
-.explore-media img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 16px;
-}
-
-.explore-body h2 {
-    margin: 0 0 20px;
-    font-size: 2rem;
-}
-
-.explore-body p {
-    margin: 0 0 16px;
-    line-height: 1.6;
-}
-
-.explore-body .btn {
+.media-row-body .btn {
     margin-top: 14px;
 }
