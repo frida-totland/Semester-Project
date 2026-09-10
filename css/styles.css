@@ -49,6 +49,33 @@ a {
     text-decoration: none;
 }
 
+/* Shared "Contact Us" button — same on every page */
+.btn {
+    display: inline-block;
+    padding: 14px 38px;
+    border: none;
+    border-radius: 16px;
+    background-color: #145C83;
+    color: #FEFCEC;
+    font-family: "Londrina Solid", Arial, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 10px 22px rgba(31, 32, 30, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 28px rgba(31, 32, 30, 0.24);
+}
+
+/* light variant for use on dark / coloured backgrounds */
+.btn-light {
+    background-color: #FEFCEC;
+    color: #145C83;
+}
+
 header {
     max-width: 1400px;  
     margin: 0 auto;

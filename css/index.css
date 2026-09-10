@@ -149,22 +149,10 @@
     border-radius: 16px;
 }
 
+/* button visuals live in styles.css (.btn); this only centers it in the section */
 .gi-button {
     display: block;
     width: max-content;
     margin: 60px auto 0;
-    padding: 16px 42px;
-    background-color: #FEFCEC;
-    color: #145C83;
-    font-family: "Londrina Solid", Arial, sans-serif;
-    font-size: 1.4rem;
-    border-radius: 16px;
-    box-shadow: 0 10px 22px rgba(31, 32, 30, 0.18);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gi-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 16px 28px rgba(31, 32, 30, 0.24);
 }
 
