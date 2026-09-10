@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html, body {
     font-family: "Nunito", Arial, sans-serif;
     color: #1F201E;
@@ -28,9 +38,20 @@ h3 {
     font-size: 1.2em;
 }
 
+p {
+    font-family: "Nunito", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
 a {
     color: #1F201E;
     text-decoration: none;
+}
+
+header {
+    max-width: 1400px;  
+    margin: 0 auto;
 }
 
 nav {
@@ -88,13 +109,26 @@ nav {
     transform: scale(1.1);
 }
 
+.header-title {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-title h1 {
+    font-size: 4.5rem;
+}
+
 footer {
     background-color: #145C83;
     color: #FEFCEC;
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 50px 40px 40px;
     display: flex;
@@ -136,4 +170,62 @@ footer a:hover {
     font-size: 0.8rem;
     margin-top: 60px;
     font-weight: 200;
+}
+
+/* "Visit the Museum" */
+.visit-cta {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+
+.visit-cta-card {
+    position: relative;
+    display: block;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 65px 50px 65px;
+    background-color: #145C83;
+    color: #FEFCEC;
+    border-radius: 24px;
+    box-shadow: 0 14px 30px rgba(31, 32, 30, 0.22);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.visit-cta-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 38px rgba(31, 32, 30, 0.28);
+}
+
+.visit-cta-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #EFAA6E;
+    color: #145C83;
+    font-size: 1.8rem;
+}
+
+.visit-cta-card h2 {
+    margin: 10px 0 6px;
+    font-size: 2.4rem;
+}
+
+.visit-cta-card p {
+    margin: 0;
+}
+
+.visit-cta-arrow {
+    position: absolute;
+    right: 32px;
+    bottom: 26px;
+    font-size: 1.6rem;
 }
