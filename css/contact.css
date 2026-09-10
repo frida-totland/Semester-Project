@@ -1,0 +1,208 @@
+/* Smooth scroll when the hero "Contact Us" button jumps to #contact-form */
+html {
+    scroll-behavior: smooth;
+}
+
+#contact-form {
+    scroll-margin-top: 20px;
+}
+
+/* Blue background */
+body {
+    background-color: #145C83;
+}
+
+.logo a,
+.user-icon a {
+    color: #FEFCEC;
+}
+
+.header-title {
+    height: auto;
+    padding: 30px 20px 10px;
+}
+
+.header-title h1 {
+    color: #FEFCEC;
+}
+
+/* Wide museum image + address */
+.contact-hero {
+    color: #FEFCEC;
+    text-align: center;
+    padding: 20px 0 70px;
+}
+
+.contact-hero img {
+    display: block;
+    width: min(1100px, 100% - 40px);
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1px;
+    margin: 0 auto 30px;
+}
+
+.contact-hero-address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.contact-hero-address > div {
+    text-align: left;
+}
+
+.contact-hero-address h2,
+.contact-hero-address p {
+    margin: 10px 0;
+}
+
+.contact-hero-icon {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #EFAA6E;
+    color: #145C83;
+}
+
+/* Info */
+.contact-info {
+    background-color: #FEFCEC;
+}
+
+.contact-info-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+    width: min(1100px, 100% - 40px);
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.contact-info-col img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+
+.contact-info-col h2 {
+    margin: 24px 0 8px;
+}
+
+.contact-info-col img + h2 {
+    margin-top: 0;
+}
+
+.contact-info-col p {
+    margin: 0 0 6px;
+    line-height: 1.5;
+}
+
+/* Contact form */
+.contact-form-section {
+    background-color: #EFAA6E;
+}
+
+.contact-form-inner {
+    width: min(1100px, 100% - 40px);
+    margin: 0 auto;
+    padding: 60px 0 50px;
+}
+
+.contact-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+    margin-top: 24px;
+}
+
+.contact-form-grid form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: transparent;
+}
+
+.contact-name-row {
+    display: flex;
+    gap: 16px;
+}
+
+.contact-name-row > div {
+    flex: 1;
+}
+
+.contact-form-grid label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.8rem;
+}
+
+.contact-form-grid input,
+.contact-form-grid select,
+.contact-form-grid textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d9d2bd;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: inherit;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.contact-form-grid textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form-grid form .btn {
+    align-self: flex-start;
+    margin-top: 4px;
+}
+
+.contact-form-aside h2 {
+    margin: 0 0 12px;
+}
+
+.contact-form-aside p {
+    margin: 0 0 14px;
+    line-height: 1.6;
+}
+
+.contact-form-aside a {
+    text-decoration: underline;
+}
+
+.contact-phone {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-phone i {
+    font-size: 1.5em;
+}
+
+.contact-phone h2 {
+    margin: 10px 0 4px;
+}
+
+.contact-thanks {
+    text-align: center;
+    margin-top: 50px;
+}

@@ -101,7 +101,7 @@
     margin: 0 0 30px;
 }
 
-/* "Get Involved" section — green band that slides under the Visit CTA card */
+/* "Get Involved" section */
 .visit-cta {
     position: relative;
     z-index: 1;
@@ -149,7 +149,6 @@
     border-radius: 16px;
 }
 
-/* button visuals live in styles.css (.btn); this only centers it in the section */
 .gi-button {
     display: block;
     width: max-content;
