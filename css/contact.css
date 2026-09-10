@@ -1,4 +1,3 @@
-/* Smooth scroll when the hero "Contact Us" button jumps to #contact-form */
 html {
     scroll-behavior: smooth;
 }
@@ -39,7 +38,7 @@ body {
     max-height: 350px;
     object-fit: cover;
     object-position: center;
-    border-radius: 1px;
+    border-radius: 15px;
     margin: 0 auto 30px;
 }
 
