@@ -2,6 +2,9 @@
     background-color: #EFAA6E;
 }
 
+/* centered on mobile; media.css puts it back left-aligned on desktop */
 .media-row-body .btn {
-    margin-top: 14px;
+    display: block;
+    width: max-content;
+    margin: 14px auto 0;
 }

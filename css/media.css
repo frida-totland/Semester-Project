@@ -1,8 +1,28 @@
-/* All responsive/desktop code lives here. Base CSS (styles.css, index.css, ...)
-   is written mobile-first; this file only adds back the desktop layout. */
 @media (min-width: 800px) {
 
-    /* ---- Header / nav (styles.css) ---- */
+    /* Alternating image / text rows */
+    .media-row-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        padding: 70px 0;
+    }
+
+    .media-row-media {
+        order: 0;
+    }
+
+    .media-row-media img {
+        aspect-ratio: 4 / 3;
+    }
+
+    /* Explore page buttons  */
+    .media-row-body .btn {
+        display: inline-block;
+        width: auto;
+        margin: 14px 0 0;
+    }
+
+    /* Header / nav */
     header {
         margin: 40px auto;
     }
@@ -52,7 +72,7 @@
         margin-top: 60px;
     }
 
-    /* ---- "Visit the Museum" (styles.css) ---- */
+    /* "Visit the Museum" */
     .visit-cta {
         padding: 80px 40px;
     }
@@ -63,7 +83,7 @@
         padding: 65px 50px 65px;
     }
 
-    /* ---- Home header background (index.css) ---- */
+    /* Home header background */
     .nav-home {
         padding-bottom: 80px;
     }
@@ -72,7 +92,7 @@
         background-size: 1100px auto;
     }
 
-    /* ---- Feature cards (index.css) ---- */
+    /* Feature cards */
     .feature-cards {
         display: flex;
         justify-content: center;
@@ -117,7 +137,7 @@
         min-height: 240px;
     }
 
-    /* ---- "Explore together" section (index.css) ---- */
+    /* "Explore together" section */
     .explore-together {
         flex-direction: row;
         align-items: center;
@@ -143,7 +163,7 @@
         margin: 0 0 30px;
     }
 
-    /* ---- "Get Involved" section (index.css) ---- */
+    /* "Get Involved" section */
     .get-involved {
         margin-top: -185px;
         padding: 165px 40px 90px;
