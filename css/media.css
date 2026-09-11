@@ -1,0 +1,165 @@
+/* All responsive/desktop code lives here. Base CSS (styles.css, index.css, ...)
+   is written mobile-first; this file only adds back the desktop layout. */
+@media (min-width: 800px) {
+
+    /* ---- Header / nav (styles.css) ---- */
+    header {
+        margin: 40px auto;
+    }
+
+    nav {
+        flex-wrap: nowrap;
+        padding: 20px 40px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-links {
+        order: 2;
+        flex-basis: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-links li a {
+        display: inline-block;
+    }
+
+    .header-title {
+        height: 400px;
+        padding: 0;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: left;
+        padding: 50px 40px 40px;
+    }
+
+    .footer-logo {
+        margin-top: 50px;
+    }
+
+    .footer-copyright {
+        flex-basis: 100%;
+        margin-top: 60px;
+    }
+
+    /* ---- "Visit the Museum" (styles.css) ---- */
+    .visit-cta {
+        padding: 80px 40px;
+    }
+
+    .visit-cta-card {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 65px 50px 65px;
+    }
+
+    /* ---- Home header background (index.css) ---- */
+    .nav-home {
+        padding-bottom: 80px;
+    }
+
+    .home-header {
+        background-size: 1100px auto;
+    }
+
+    /* ---- Feature cards (index.css) ---- */
+    .feature-cards {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 1100px;
+        gap: 40px;
+        margin: 0 auto;
+        padding: 40px 40px 80px;
+    }
+
+    .card {
+        flex: 1 1 0;
+        max-width: 300px;
+        padding: 32px 28px;
+    }
+
+    .card h2 {
+        margin: 0 0 18px;
+    }
+
+    .card p {
+        display: block;
+        margin: 0;
+    }
+
+    .card i {
+        padding-top: 60px;
+    }
+
+    .card-explore {
+        grid-column: auto;
+        margin-top: 20px;
+        min-height: 300px;
+    }
+
+    .card-exhibitions {
+        min-height: 420px;
+    }
+
+    .card-events {
+        margin-top: 110px;
+        min-height: 240px;
+    }
+
+    /* ---- "Explore together" section (index.css) ---- */
+    .explore-together {
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 60px 40px;
+    }
+
+    .explore-together-img {
+        flex: 1 1 0;
+        min-width: 0;
+        width: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .explore-together-text {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .explore-together-text h1 {
+        margin: 0 0 30px;
+    }
+
+    /* ---- "Get Involved" section (index.css) ---- */
+    .get-involved {
+        margin-top: -185px;
+        padding: 165px 40px 90px;
+    }
+
+    .get-involved-inner > h2 {
+        margin: 0 0 50px;
+    }
+
+    .get-involved-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 40px;
+        align-items: start;
+    }
+
+    .gi-button {
+        margin: 60px auto 0;
+    }
+}
