@@ -182,4 +182,64 @@
     .gi-button {
         margin: 60px auto 0;
     }
+
+    /* Contact page */
+    .contact-hero {
+        padding: 20px 0 70px;
+    }
+
+    .contact-hero img {
+        aspect-ratio: 3 / 1;
+        margin-bottom: 30px;
+    }
+
+    .contact-hero-address {
+        flex-direction: row;
+        gap: 16px;
+        margin-bottom: 30px;
+    }
+
+    .contact-hero-address > div {
+        text-align: left;
+    }
+
+    .contact-hero-address h2,
+    .contact-hero-address p {
+        margin: 10px 0;
+    }
+
+    .contact-info-inner {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "image hours"
+            "about hours";
+        gap: 60px;
+        align-items: start;
+        padding: 70px 0;
+    }
+
+    .contact-info-col--hours {
+        text-align: left;
+    }
+
+    .contact-info-image img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .contact-form-inner {
+        padding: 60px 0 50px;
+    }
+
+    .contact-form-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    .contact-phone {
+        justify-content: flex-start;
+    }
+
+    .contact-thanks {
+        margin-top: 50px;
+    }
 }

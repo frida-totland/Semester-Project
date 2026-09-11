@@ -29,38 +29,37 @@ body {
     color: #FEFCEC;
 }
 
-/* Wide museum image + address */
 .contact-hero {
     color: #FEFCEC;
     text-align: center;
-    padding: 20px 0 70px;
+    padding: 20px 0 50px;
 }
 
 .contact-hero img {
     display: block;
     width: min(1100px, 100% - 40px);
-    max-height: 350px;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     object-position: center;
     border-radius: 15px;
-    margin: 0 auto 30px;
+    margin: 0 auto 24px;
 }
 
 .contact-hero-address {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 16px;
-    margin-bottom: 30px;
+    gap: 12px;
+    margin-bottom: 24px;
 }
 
 .contact-hero-address > div {
-    text-align: left;
+    text-align: center;
 }
 
 .contact-hero-address h2,
 .contact-hero-address p {
-    margin: 10px 0;
+    margin: 4px 0;
 }
 
 .contact-hero-icon {
@@ -83,29 +82,44 @@ body {
 
 .contact-info-inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: start;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "image"
+        "hours"
+        "about";
+    gap: 30px;
     width: min(1100px, 100% - 40px);
     margin: 0 auto;
-    padding: 70px 0;
+    padding: 40px 0;
 }
 
-.contact-info-col img {
+.contact-info-image {
+    grid-area: image;
+}
+
+.contact-info-col--hours {
+    grid-area: hours;
+    text-align: center;
+}
+
+.contact-info-admission {
+    text-align: left;
+}
+
+.contact-info-col--about {
+    grid-area: about;
+}
+
+.contact-info-image img {
     display: block;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 16px;
-    margin-bottom: 8px;
 }
 
 .contact-info-col h2 {
     margin: 24px 0 8px;
-}
-
-.contact-info-col img + h2 {
-    margin-top: 0;
 }
 
 .contact-info-col p {
@@ -121,13 +135,13 @@ body {
 .contact-form-inner {
     width: min(1100px, 100% - 40px);
     margin: 0 auto;
-    padding: 60px 0 50px;
+    padding: 40px 0;
 }
 
 .contact-form-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 1fr;
+    gap: 30px;
     align-items: start;
     margin-top: 24px;
 }
@@ -193,6 +207,7 @@ body {
 .contact-phone {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 15px;
     margin-top: 20px;
 }
@@ -207,5 +222,5 @@ body {
 
 .contact-thanks {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
