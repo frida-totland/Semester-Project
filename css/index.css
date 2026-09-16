@@ -48,6 +48,7 @@
 
 .card h2 {
     margin: 0 0 12px;
+    font-size: 1.3rem;
 }
 
 .card p {
@@ -76,7 +77,7 @@
     background-color: #B4CE9B;
 }
 
-/* ---- "Explore together" section ---- */
+/* "Explore together" section */
 .explore-together {
     display: flex;
     flex-direction: column;
@@ -96,7 +97,7 @@
     margin: 0 0 16px;
 }
 
-/* ---- "Get Involved" section ---- */
+/* "Get Involved" section */
 .visit-cta {
     position: relative;
     z-index: 1;

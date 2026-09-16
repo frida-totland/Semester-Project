@@ -1,5 +1,13 @@
 @media (min-width: 800px) {
 
+    h1 {
+        font-size: 4em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
     /* Alternating image / text rows */
     .media-row-inner {
         grid-template-columns: 1fr 1fr;

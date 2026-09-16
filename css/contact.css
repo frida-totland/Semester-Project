@@ -51,6 +51,7 @@ body {
     align-items: center;
     gap: 12px;
     margin-bottom: 24px;
+    justify-content: center;
 }
 
 .contact-hero-address > div {

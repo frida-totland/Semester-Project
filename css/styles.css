@@ -23,13 +23,13 @@ body {
 h1 {
     font-family: "Londrina Shadow", Arial, sans-serif;
     font-weight: 400;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 h2 {
     font-family: "Londrina Solid", Arial, sans-serif;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 h3 {
@@ -41,7 +41,7 @@ h3 {
 p {
     font-family: "Nunito", Arial, sans-serif;
     font-weight: 400;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 a {
@@ -227,10 +227,6 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.header-title h1 {
-    font-size: 4.5rem;
 }
 
 footer {
