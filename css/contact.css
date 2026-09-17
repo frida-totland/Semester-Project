@@ -6,6 +6,21 @@ html {
     scroll-margin-top: 20px;
 }
 
+/* Navigation alt background */
+.contact-nav-links {
+    background-color: var(--background-color);
+}
+
+.contact-nav-links li a {
+    color: var(--text-color);
+}
+
+.contact-nav-links li a:hover,
+.contact-nav-links li a.active {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
 /* Blue background */
 body {
     background-color: var(--primary-color);

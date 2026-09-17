@@ -123,6 +123,7 @@ nav {
     justify-content: space-between;
     gap: 16px;
     padding: 16px 20px;
+    position: relative;
 }
 
 .logo {
@@ -184,14 +185,21 @@ nav {
 }
 
 .nav-links {
+    position: absolute;
     order: 4;
-    flex-basis: 100%;
+    left: 30%;
+    right: 10px;
+    top: 100%;
     display: none;
     flex-direction: column;
     gap: 12px;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 20px 30px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(31, 32, 30, 0.18);
+    z-index: 10;
 }
 
 .nav-toggle:checked ~ .nav-links {
@@ -202,24 +210,24 @@ nav {
 
 .nav-links li a {
     display: block;
-    background-color: var(--tertiary-color);
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     padding: 12px 24px;
     border-radius: 20px;
-    box-shadow: 0 2px 2px rgba(31, 32, 30, 0.18);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--alt-text-color);
 }
 
 .nav-links li a:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
     transform: scale(1.05);
     box-shadow: 0 4px 5px rgba(31, 32, 30, 0.28);
 }
 
 .nav-links li a.active {
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
     transform: scale(1.05);
+    color: var(--text-color);
 }
 
 .header-title {

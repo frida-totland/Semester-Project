@@ -45,16 +45,32 @@
     }
 
     .nav-links {
+        position: static;
         order: 2;
         flex-basis: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 20px;
+        background-color: transparent;
+        box-shadow: none;
     }
 
     .nav-links li a {
         display: inline-block;
+        box-shadow: 0 2px 2px rgba(31, 32, 30, 0.18);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: var(--tertiary-color);
+        color: var(--text-color);
+        text-align: center;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active,
+    .contact-nav-links li a:hover,
+    .contact-nav-links li a.active {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
     }
 
     .header-title {
