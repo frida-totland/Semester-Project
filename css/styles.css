@@ -1,3 +1,5 @@
+@import "variables.css";
+
 html {
   box-sizing: border-box;
 }
@@ -10,13 +12,13 @@ html {
 
 html, body {
     font-family: "Nunito", Arial, sans-serif;
-    color: #1F201E;
+    color: var(--text-color);
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: #FEFCEC;
+    background-color: var(--background-color);
     margin: 0 auto;
 }
 
@@ -45,7 +47,7 @@ p {
 }
 
 a {
-    color: #1F201E;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -55,8 +57,8 @@ a {
     padding: 14px 38px;
     border: none;
     border-radius: 16px;
-    background-color: #145C83;
-    color: #FEFCEC;
+    background-color: var(--primary-color);
+    color: var(--alt-text-color);
     font-family: "Londrina Solid", Arial, sans-serif;
     font-size: 1.2rem;
     text-align: center;
@@ -72,8 +74,8 @@ a {
 
 /* light variant */
 .btn-light {
-    background-color: #FEFCEC;
-    color: #145C83;
+    background-color: var(--background-color);
+    color: var(--primary-color);
 }
 
 /* Alternating image / text rows */
@@ -128,7 +130,7 @@ nav {
 }
 
 .logo a {
-    color: #145C83;
+    color: var(--primary-color);
     font-size: 1.8rem;
     text-decoration: none;
 }
@@ -150,7 +152,7 @@ nav {
     justify-content: center;
     width: 28px;
     height: 28px;
-    color: #145C83;
+    color: var(--primary-color);
     font-size: 1.4rem;
     cursor: pointer;
 }
@@ -172,7 +174,7 @@ nav {
 }
 
 .user-icon a {
-    color: #145C83;
+    color: var(--primary-color);
     font-size: 1.8rem;
     text-decoration: none;
 }
@@ -200,7 +202,7 @@ nav {
 
 .nav-links li a {
     display: block;
-    background-color: #B4CE9B;
+    background-color: var(--tertiary-color);
     font-weight: bold;
     text-align: center;
     padding: 12px 24px;
@@ -210,13 +212,13 @@ nav {
 }
 
 .nav-links li a:hover {
-    background-color: #8BB166;
+    background-color: var(--secondary-color);
     transform: scale(1.05);
     box-shadow: 0 4px 5px rgba(31, 32, 30, 0.28);
 }
 
 .nav-links li a.active {
-    background-color: #8BB166;
+    background-color: var(--secondary-color);
     transform: scale(1.05);
 }
 
@@ -230,8 +232,8 @@ nav {
 }
 
 footer {
-    background-color: #145C83;
-    color: #FEFCEC;
+    background-color: var(--primary-color);
+    color: var(--alt-text-color);
 }
 
 .footer-container {
@@ -251,7 +253,7 @@ footer h2 {
 }
 
 footer a {
-    color: #FEFCEC;
+    color: var(--alt-text-color);
 }
 
 footer a:hover {
@@ -272,7 +274,7 @@ footer a:hover {
 }
 
 .footer-logo i {
-    color: #FEFCEC;
+    color: var(--alt-text-color);
     font-size: 5rem;
 }
 
@@ -295,8 +297,8 @@ footer a:hover {
     position: relative;
     display: block;
     padding: 50px 24px 30px;
-    background-color: #145C83;
-    color: #FEFCEC;
+    background-color: var(--primary-color);
+    color: var(--alt-text-color);
     border-radius: 24px;
     box-shadow: 0 2px 2px rgba(31, 32, 30, 0.18);
     text-align: center;
@@ -319,8 +321,8 @@ footer a:hover {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #EFAA6E;
-    color: #145C83;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     font-size: 1.8rem;
 }
 

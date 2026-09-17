@@ -1,4 +1,4 @@
 .media-row--blue {
-    background-color: #145C83;
-    color: #FEFCEC;
+    background-color: var(--primary-color);
+    color: var(--alt-text-color);
 }

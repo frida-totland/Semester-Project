@@ -1,8 +1,7 @@
 .media-row--orange {
-    background-color: #EFAA6E;
+    background-color: var(--secondary-color);
 }
 
-/* centered on mobile; media.css puts it back left-aligned on desktop */
 .media-row-body .btn {
     display: block;
     width: max-content;

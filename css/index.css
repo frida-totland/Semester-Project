@@ -36,7 +36,7 @@
     padding: 24px 20px;
     border-radius: 24px;
     box-sizing: border-box;
-    color: #1F201E;
+    color: var(--text-color);
     box-shadow: 0 2px 2px rgba(31, 32, 30, 0.18);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -64,17 +64,17 @@
 }
 
 .card-explore {
-    background-color: #EFAA6E;
+    background-color: var(--secondary-color);
     grid-column: 1 / -1;
 }
 
 .card-exhibitions {
-    background-color: #145C83;
-    color: #FEFCEC;
+    background-color: var(--primary-color);
+    color: var(--alt-text-color);
 }
 
 .card-events {
-    background-color: #B4CE9B;
+    background-color: var(--tertiary-color);
 }
 
 /* "Explore together" section */
@@ -104,7 +104,7 @@
 }
 
 .get-involved {
-    background-color: #B4CE9B;
+    background-color: var(--tertiary-color);
     padding: 50px 20px 60px;
 }
 

@@ -8,16 +8,16 @@ html {
 
 /* Blue background */
 body {
-    background-color: #145C83;
+    background-color: var(--primary-color);
 }
 
 .logo a,
 .user-icon a {
-    color: #FEFCEC;
+    color: var(--alt-text-color);
 }
 
 .hamburger {
-    color: #FEFCEC;
+    color: var(--alt-text-color);
 }
 
 .header-title {
@@ -26,11 +26,11 @@ body {
 }
 
 .header-title h1 {
-    color: #FEFCEC;
+    color: var(--alt-text-color);
 }
 
 .contact-hero {
-    color: #FEFCEC;
+    color: var(--alt-text-color);
     text-align: center;
     padding: 20px 0 50px;
 }
@@ -72,13 +72,13 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #EFAA6E;
-    color: #145C83;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 /* Info */
 .contact-info {
-    background-color: #FEFCEC;
+    background-color: var(--background-color);
 }
 
 .contact-info-inner {
@@ -130,7 +130,7 @@ body {
 
 /* Contact form */
 .contact-form-section {
-    background-color: #EFAA6E;
+    background-color: var(--secondary-color);
 }
 
 .contact-form-inner {
@@ -174,9 +174,9 @@ body {
 .contact-form-grid textarea {
     width: 100%;
     padding: 10px 12px;
-    border: 1px solid #d9d2bd;
+    border: none;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: var(--background-color);
     font-family: inherit;
     font-size: 0.9rem;
     box-sizing: border-box;

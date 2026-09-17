@@ -1,0 +1,13 @@
+:root {
+    /* Colors */
+    --background-color: #FEFCEC;
+    --text-color: #1F201E;
+    --alt-text-color: var(--background-color);
+    --primary-color: #145C83;
+    --secondary-color: #EFAA6E;
+    --tertiary-color: #B4CE9B;
+
+    /* Font Sizes */
+
+    /* Spacing */
+}
