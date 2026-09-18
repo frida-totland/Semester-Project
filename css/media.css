@@ -58,7 +58,7 @@
 
     .nav-links li a {
         display: inline-block;
-        box-shadow: 0 2px 2px rgba(31, 32, 30, 0.18);
+        box-shadow: 0 4px 4px var(--shadow-color);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         background-color: var(--tertiary-color);
         color: var(--text-color);
